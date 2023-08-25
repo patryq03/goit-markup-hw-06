@@ -717,5 +717,14 @@ input:not([type="checkbox"]){
     border: 1px solid var(--iris-color);
     border-radius: 4px;
     width: 360px;
-    height: 40px;
+    height: 20px;
+    display: block;
+
+}
+.modal-close>svg{
+    margin-top: -5px;
+}
+.input-wrapper>svg{
+    padding-left: 16px;
+    padding-top: 11px;
 }
