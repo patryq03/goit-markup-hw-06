@@ -738,18 +738,19 @@ input:not([type="checkbox"]){
 }
 .input-wrapper>svg{
     padding-left: 16px;
-    padding-top: 11px;
+    padding-block: 11px;
 }
 .modal-icon{
-    
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 16px;
+    width: 18px;
+    height: 18px;
     fill: var(--navyblue-color);
 }
 .modal-icon:focus{
     fill: var(--iris-color);
-}
-.modal-icon>use{
-    height: 18px;
-    padding: 3px 0;
 }
 .input-wrapper input:not([type="checkbox"]):focus {
 	outline: none;
