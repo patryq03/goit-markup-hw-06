@@ -736,7 +736,6 @@ svg.close{
 	background: var(--iris-color);
 	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 	max-width: 169px;
-	max-height: 50px;
 	padding: 16px 32px;
 	color: #fff;
 	font-family: Roboto;
