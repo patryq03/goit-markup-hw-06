@@ -605,6 +605,9 @@ nav.logo{
     border: 1px solid rgba(0, 0, 0, 0.1);
     fill: var(--navyblue-color);
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    padding-top: 5px;
 }
 .modal-close:hover{
     background-color: var(--ocean-color);
@@ -731,7 +734,7 @@ input:not([type="checkbox"]){
     height: 20px;
     display: flex;
     line-height: 18px;
-    
+
 }
 .modal-close>svg{
     margin-top: -5px;
