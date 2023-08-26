@@ -4,6 +4,7 @@
     --cornflower-color: #E7E9FC;
     --iris-color: #4D5AE5;
     --navyblue-color: #2E2F42;
+    --navyblue-modal: #2E2F4266;
     --white: #FFF;
     --slate-color: #434455;
     --ocean-color: #404BBF;
@@ -11,6 +12,7 @@
     --grey: rgba(46, 47, 66, 0.70);
     --light-slate: #8E8F99;
     --green: #31D0AA;
+    --diary: #FCFCFC;
     --tr-function: cubic-bezier(0.4, 0, 0.2, 1);
     --tr-duration: 250ms;
     --transition: var(--tr-function) var(--tr-duration);
@@ -660,7 +662,7 @@ svg.close{
     width: 8px;
     flex-shrink: 0;
     transition: var(--transition);
-    
+
   }
 .form-paragraph{
     width: 360px;
@@ -673,9 +675,12 @@ svg.close{
     text-align: center;
 }
 input, textarea{
-    border: 1px solid var(--iris-color);
+    border: 1px solid var(--navyblue-modal);
     border-radius: 4px;
     margin-bottom: 8px;
+}
+textarea:hover textarea:focus-within{
+    border-color: var(--iris-color);
 }
 label{
     font-size: 12px;
@@ -714,16 +719,19 @@ label{
     flex-shrink: 0;
     stroke-width: 1px;
     stroke: var(--navyblue-modal, rgba(46, 47, 66, 0.40));
+    background-color: var(--diary);
 }
 input:not([type="checkbox"]){
     border: none;
 }
 .input-wrapper{
-    border: 1px solid var(--iris-color);
+    border: 1px solid var(--navyblue-modal);
     border-radius: 4px;
     width: 360px;
     height: 20px;
     display: flex;
+    line-height: 18px;
+    
 }
 .modal-close>svg{
     margin-top: -5px;
@@ -738,9 +746,22 @@ input:not([type="checkbox"]){
     height: 24px;
     width: 18px;
     transition: var(--transition);
-
+    fill: var(--navyblue-color);
+}
+.modal-icon:focus{
+    fill: var(--iris-color);
 }
 .modal-icon>use{
     height: 18px;
     padding: 3px 0;
+}
+.input-wrapper input:not([type="checkbox"]):focus {
+	outline: none;
+}
+.input-wrapper > input {
+	flex-grow: 1;
+}
+.input-wrapper:focus-within {
+	border-color: var(--iris-color);
+    color: var(--iris-color);
 }
