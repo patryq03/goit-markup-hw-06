@@ -729,6 +729,7 @@ input:not([type="checkbox"]){
 }
 .input-wrapper{
     border: 1px solid var(--navyblue-modal);
+    fill: var(--navyblue-color);
     border-radius: 4px;
     width: 360px;
     height: 20px;
