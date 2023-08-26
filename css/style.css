@@ -719,7 +719,7 @@ input:not([type="checkbox"]){
     width: 360px;
     height: 20px;
     display: block;
-
+    position: relative;
 }
 .modal-close>svg{
     margin-top: -5px;
@@ -736,6 +736,6 @@ input:not([type="checkbox"]){
     transition: var(--transition);
 }
 .modal-icon>use{
-    height: 12px;
-    width: 12px;
+    height: 18px;
+    padding: 3px 0;
 }
