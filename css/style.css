@@ -734,7 +734,8 @@ input:not([type="checkbox"]){
     height: 20px;
     display: flex;
     line-height: 18px;
-
+    position: relative;
+    margin-top: 4px;
 }
 .input-wrapper>svg{
     padding-left: 16px;
@@ -757,6 +758,15 @@ input:not([type="checkbox"]){
 }
 .input-wrapper > input {
 	flex-grow: 1;
+    border: none;
+    outline: none;
+    height: 40px;
+    padding-left: 38px;
+    border-radius: 4px;
+    border: 1px solid var(--modal);
+    width: 100%;
+    transition: 250ms;
+    transition-timing-function: var(--tr-function);
 }
 .input-wrapper:focus-within {
 	border-color: var(--iris-color);
