@@ -607,7 +607,7 @@ nav.logo{
     cursor: pointer;
     display: flex;
     justify-content: center;
-    padding-top: 5px;
+    padding-top: 7px;
 }
 .modal-close:hover{
     background-color: var(--ocean-color);
@@ -736,19 +736,12 @@ input:not([type="checkbox"]){
     line-height: 18px;
 
 }
-.modal-close>svg{
-    margin-top: -5px;
-}
 .input-wrapper>svg{
     padding-left: 16px;
     padding-top: 11px;
 }
 .modal-icon{
-    position: absolute;
-    inset: auto 0 8px 16px;
-    height: 24px;
-    width: 18px;
-    transition: var(--transition);
+    
     fill: var(--navyblue-color);
 }
 .modal-icon:focus{
