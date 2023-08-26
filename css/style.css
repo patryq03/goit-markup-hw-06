@@ -641,7 +641,7 @@ nav.logo{
 	inset: 0;
 	background-color: var(--iris-color);
 	color: #fff;
-	translate: 0 100% 0;
+	translate: 0 101% 0;
 	transition: translate 250ms;
     padding-top: 40px;
     padding-inline: 32px;
@@ -727,4 +727,15 @@ input:not([type="checkbox"]){
 .input-wrapper>svg{
     padding-left: 16px;
     padding-top: 11px;
+}
+.modal-icon{
+    position: absolute;
+    inset: auto 0 8px 16px;
+    height: 24px;
+    width: 18px;
+    transition: var(--transition);
+}
+.modal-icon>use{
+    height: 12px;
+    width: 12px;
 }
