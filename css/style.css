@@ -656,6 +656,11 @@ nav.logo{
 }
 svg.close{
     margin: auto;
+    height: 8px;
+    width: 8px;
+    flex-shrink: 0;
+    transition: var(--transition);
+    
   }
 .form-paragraph{
     width: 360px;
@@ -733,6 +738,7 @@ input:not([type="checkbox"]){
     height: 24px;
     width: 18px;
     transition: var(--transition);
+
 }
 .modal-icon>use{
     height: 18px;
