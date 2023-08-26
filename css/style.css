@@ -718,8 +718,7 @@ input:not([type="checkbox"]){
     border-radius: 4px;
     width: 360px;
     height: 20px;
-    display: block;
-    position: relative;
+    display: flex;
 }
 .modal-close>svg{
     margin-top: -5px;
