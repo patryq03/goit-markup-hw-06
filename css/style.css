@@ -132,9 +132,11 @@ button{
     background-color: var(--ocean-color);
     color: var(--white);
     font-family: Roboto, sans-serif;
+    transition: var(--transition);
 }
 .buttons_list>button:focus, .buttons_list>button:hover{
     background-color: var(--ocean-color);
+    transition: var(--transition);
 
 }
 .buttons_list{
@@ -183,6 +185,7 @@ li{
     color: var(--white);
     background: var(--ocean-color);
     font-family: Roboto, sans-serif;
+    transition: var(--transition);
 }
 .title-of-description{
     font-size: 20px;
@@ -249,6 +252,7 @@ li{
     padding-bottom: 23.5px;
     width: 48px;
     flex-shrink: 0;
+    transition: var(--transition);
 }
 .contact{
     color: var(--slate-color); 
@@ -259,6 +263,7 @@ li{
 }
 .contact:hover, .contact:focus{
     color: var(--ocean-color);
+    transition: var(--transition);
 }
 .contact-to-firm{
     font-style: normal;
@@ -278,6 +283,7 @@ li{
 }
 .photos>.link:hover, .photos>.link:focus{
     color: var(--slate-color);
+    transition: var(--transition);
 }
 address{
     font-style: normal;
@@ -369,6 +375,7 @@ button.service {
     background-color: var(--ocean-color);
     color: var(--white);
     font-family: Roboto, sans-serif;
+    transition: var(--transition);
 }
 .buttons_images{
     margin-left: auto;
@@ -394,7 +401,9 @@ button.service {
 }
 .buttons_list_button:hover, .buttons_list_button:focus{
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
+    transition: var(--transition);
 }
+
 .point_li{
     display: flex;
     width: 264px;
@@ -493,11 +502,12 @@ nav.logo{
     display: inline-block;
   }
   .photos:hover{
-        box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
+    
+    box-shadow: 0px 1px 1px 0px rgba(46, 47, 66, 0.16);
       
-      box-shadow: 0px 1px 1px 0px rgba(46, 47, 66, 0.16);
-      
-      box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+    box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+    transition: var(--transition);
     
   }
   .customers-icon {
@@ -510,9 +520,10 @@ nav.logo{
     padding: 16px 32px;
   }
 
-  .customers-icon:hover, .cus-icon:focus {
+  .customers-icon:hover, .customers-icon:focus {
     fill: var(--ocean-color);
     border-color: var(--ocean-color);
+    transition: var(--transition);
   }
 
 .down{
@@ -536,6 +547,7 @@ nav.logo{
  }
  .circle-footer>a:hover{
     background-color: var(--green);
+    transition: var(--transition);
   }
   .circle-footer{
     display: flex;
@@ -559,6 +571,7 @@ nav.logo{
   .circle:hover, .circle:focus{
     background-color: var(--ocean-color);
     cursor: pointer;
+    transition: var(--transition);
   }
 .circle-footer>svg {
     width: 16px;
@@ -655,6 +668,7 @@ nav.logo{
 
 .photos:hover .card-image-description {
 	translate: 0;
+    transition: var(--transition);
 }
 .close {
     width: 12px;
@@ -695,12 +709,13 @@ svg.close{
 	transition-timing-function: var(--tr-function);
 }
 
-.modal-field-wrapper input:focus {
+.modal-field-wrapper input:focus, .modal-field-wrapper:focus {
 	border: 1px solid var(--iris-color);
 }
 
-.modal-field-wrapper input:focus + svg {
+.modal-field-wrapper input:focus + svg, .modal-field-wrapper:focus {
 	fill: var(--iris-color);
+
 }
 
 .modal-icon-1 {
@@ -732,19 +747,22 @@ svg.close{
 	letter-spacing: 0.48px;
 }
 .button-send {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 10px;
 	border-radius: 4px;
 	background: var(--iris-color);
 	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 	max-width: 169px;
 	padding: 16px 32px;
 	color: #fff;
-	font-family: Roboto;
 	font-size: 16px;
 	font-weight: 500;
 	line-height: 1.5;
 	letter-spacing: 0.64px;
 	margin-top: 24px;
     text-align: center;
+    border: 0;
 }
 .input-text > a {
 	text-decoration: underline;
@@ -785,7 +803,8 @@ svg.close{
 .button-send-wrapper {
 	display: flex;
 	justify-content: center;
-	align-items: center;
+	align-items: flex-start;
+    max-width: 360px;
 }
 .visually-hidden {
 	position: absolute;
@@ -853,6 +872,7 @@ svg.close{
 	align-items: center;
 	gap: 16px;
     margin-right: 159px;
+    border: none;
 }
 
 .footer-subscribe-icon {
