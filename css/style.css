@@ -64,6 +64,12 @@ footer{
     gap: 8px;
 
 }
+.person{
+    border-radius: 0px 0px 4px 4px;
+background: var(--white, #FFF);
+box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+
 .person>img{
     height: 260px;
 }
@@ -155,8 +161,6 @@ li{
     background-color: var(--cloud-color);
     width: 1440px;
     flex-shrink: 0;
-    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-    border-radius: 0px 0px 4px 4px;
 }
 .order{
     background-image:linear-gradient(hsl(237 18% 22% / 0.7), hsl(237 18% 22% / 0.7)), url(https://s3-alpha-sig.figma.com/img/7c8d/46d4/7e83b6c8ee4603ea892aa8aaebb3c5fe?Expires=1693785600&Signature=fNPichXWz1xx6AOjBn7SjwH016MEoHDd-sxfF9t3rZ8w5KLGg7yAAKC8t8Vdkgfi7aX3zmHhItkeQ81gGE97ysfUTPuZaTY1kgJoiO478jQEnHMzglTDDu1fcpnFYlrKraq2DpkKj1ya7gdKIzQ33D9bshZZxRz-DNgQCA19JHFTuCTVWQF1E6u50snLjmusvL0OSUrvviXcsSYS2T5d8zIXHmxaUA9E9ID9LepKTmtoGGXjdBFrHqK59edgw6A~PL60vRpJrjPgj5zvllEXryYlpbznepUzJYu~kHjUCudihWI842fc-~WkVvuCaUYoazxk0Ydol6F5fLEk7Xqvcw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4);
@@ -799,7 +803,25 @@ svg.close{
 	margin-top: 16px;
 	display: flex;
 	gap: 8px;
+    
 }
+.modal-check-span{
+    display: flex;
+    width: 16px;
+    height: 16px;
+    border: 1px solid var(--navyblue-modal);
+    border-radius: 2px;
+    align-items: center;
+    justify-content: center;
+    fill: transparent;
+    margin-right: 8px;
+    transition:  border var(--transition), fill var(--transition), background-color var(--transition);
+}
+.modal-check:checked + .modal-check-text span{
+    fill: var(--cloud-color);
+    border: none;
+    background-color: var(--iris-color);
+} 
 .button-send-wrapper {
 	display: flex;
 	justify-content: center;
@@ -836,7 +858,7 @@ svg.close{
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
-	fill: transparent;
+
 	transition: background-color 250ms var(--tr-function), border 250ms var(--tr-function), fill 250ms var(--tr-function);
 	margin-right: 8px;
 }
@@ -844,15 +866,16 @@ svg.close{
 .checkbox-icon {
 	width: 16px;
 	height: 16px;
+    opacity: 0;
+    transition: var(--transition);
+    border: 1px solid var(--navyblue-color);
+    
 }
 
 
-.modal-check:checked + .modal-check-text span {
+.tc-wrapper input:checked .checkbox-icon {
+    opacity: 1;
 	border: none;
-    background-color: var(--ocean-color);
-    fill: var(--ocean-color);
-    stroke-width: 1px;
-    stroke: var(--ocean-color);
 }
 .button-subscribe {
 	width: 165px;
