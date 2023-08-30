@@ -813,12 +813,11 @@ svg.close{
     border-radius: 2px;
     align-items: center;
     justify-content: center;
-    fill: transparent;
     margin-right: 8px;
-    transition:  border var(--transition), fill var(--transition), background-color var(--transition);
+    background-color: white;
+    fill: white;
 }
 .modal-check:checked + .modal-check-text span{
-    fill: var(--cloud-color);
     border: none;
     background-color: var(--iris-color);
 } 
@@ -859,22 +858,19 @@ svg.close{
 	align-items: center;
 	justify-content: center;
 
-	transition: background-color 250ms var(--tr-function), border 250ms var(--tr-function), fill 250ms var(--tr-function);
-	margin-right: 8px;
+
 }
 
 .checkbox-icon {
 	width: 16px;
 	height: 16px;
-    opacity: 0;
-    transition: var(--transition);
-    border: 1px solid var(--navyblue-color);
-    
+    border: 1px solid var(--navyblue-modal);
+    fill: white;
+
 }
 
-
 .tc-wrapper input:checked .checkbox-icon {
-    opacity: 1;
+    background-color: var(--iris-color);
 	border: none;
 }
 .button-subscribe {
